@@ -11,6 +11,11 @@ gulp.task('lint', function lintCssTask() {
       },
       reporters: [
         {formatter: 'verbose', console: true}
-      ]
+      ],
+      failAfterError: false
   }));
+});
+
+gulp.task('lint-live', function lintCssLiveTask() {
+  return gulp.watch('styles/**/*.scss', gulp.series('lint'));
 });

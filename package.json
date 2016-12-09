@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "gulp lint"
+    "lint": "gulp lint",
+    "lint-live": "gulp lint-live"
   },
   "author": "Oleg Sklyanchuk <sklyanchuk@gmail.com> (http://olegskl.com/)",
   "license": "ISC",
   "devDependencies": {
     "gulp": "git://github.com/gulpjs/gulp.git#4.0",
-    "gulp-stylelint": "^3.1.0",
-    "stylelint-config-standard": "^12.0.0"
+    "gulp-stylelint": "^3.5.0",
+    "stylelint-config-standard": "^15.0.0"
   }
 }
